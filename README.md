@@ -1,47 +1,33 @@
-## Getting Started
+## Counter DAPP
 
-Create a project using this example:
+This project implements a simple decentralised application that has both a backend written in solidity and a frontend component.
 
-```bash
-npx thirdweb create --contract --template hardhat-javascript-starter
-```
+### Backend
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+This is a Solidity smart contract that implements a simple counter. It allows you to get the current value of the counter and also increment it by one.
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
+### Getting Started
 
-## Building the project
+To use this contract, you need a Solidity development environment set up. You can use tools like Remix or Hardhat to compile and deploy this contract.
 
-After any changes to the contract, run:
+### Contract Details
 
-```bash
-npm run build
-# or
-yarn build
-```
+The contract has the following functions:
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) detected on your contract.
+- getCounter()
+  This function is a view function, meaning it does not modify the state of the contract. It returns the current value of the counter.
 
-## Deploying Contracts
+- incrementCounter()
+  This function increments the counter by one. It does not return any value.
 
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
+### Frontend
 
-```bash
-npm run deploy
-# or
-yarn deploy
-```
+In this repository is also the code that deploys the frontend and interacts with it using the thirdweb SDK. To make use of the frontend or run it, you will need to create a Next.js project and have a working knowledge of typescript.
 
-## Releasing Contracts
+### Contributing
 
-If you want to release a version of your contracts publicly, you can use one of the followings command:
+If you find any issues with the contract or have suggestions for improvement, feel free to open an issue or submit a pull request.
 
-```bash
-npm run release
-# or
-yarn release
-```
+### License
 
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+This contract is available under the UNLICENSED license.
